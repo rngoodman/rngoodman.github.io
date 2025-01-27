@@ -1,10 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            border-bottom: 1px solid #ddd;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color:#156082;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        .content {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: left;
+        }
+        .content h1 {
+            font-size: 36px;
+        }
+        .content h1 span {
+            color:#156082;
+        }
+        .content p {
+            font-size: 18px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .image-container {
+            text-align: right;
+        }
+        .image-container img {
+            max-width: 250px;
+            border-radius: 10px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: left;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin-right: 15px;
+            font-size: 24px;
+            color: black;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Page</h1>
-    <p>This is my personal website hosted on GitHub Pages.</p>
+
+    <header>
+        <div class="logo">Richard N. Goodman</div>
+        <nav>
+            <a href="https://www.linkedin.com/in/richard-n-goodman/">CV</a>
+            <a href="https://scholar.google.com/citations?user=AbHWopsAAAAJ&hl=en">Publications</a>
+            <a href="https://github.com/rngoodman/tutorials">Bioinformatic Tutorials</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1><strong>Hey, I'm <span>Richard Goodman</span></strong></h1>
+        
+        <div class="image-container">
+            <img src="imgs/RG_headshot.png" alt="Picture">
+        </div>
+
+        <p>I'm a Post-Doc studying genomics of this subject at the Liverpool School of Tropical Medicine </span></p>
+
+        <p> My areas of research include microbiology, molecular biology, genomics and bioinformatics. I focus particualry on the evolution of antimicrobial resisatnce (AMR) in bacteria. I am interested in all things genomics, from DNA extraction to data analysis and I have a collection of bioinformatic tutorials. 
+        </p>
+
+        <div class="social-icons">
+            <a href="https://github.com/rngoodman"><img src="imgs/github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/richard-n-goodman/"><img src="imgs/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://bsky.app/profile/richard-goodman.bsky.social"><img src="imgs/bluesky.svg" alt="Twitter"></a>
+        </div>
+    </div>
+
 </body>
 </html>
