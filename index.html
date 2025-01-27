@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Name</title>
-    <style>
+    <title>Richard N. Goodman</title>
+ <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
+
         header {
             display: flex;
             justify-content: space-between;
@@ -18,65 +19,94 @@
             padding: 20px 50px;
             border-bottom: 1px solid #ddd;
         }
+
         .logo {
             font-size: 24px;
             font-weight: bold;
-            color:#156082;
+            color: #156082;
         }
+
         nav a {
             margin: 0 15px;
             text-decoration: none;
             color: black;
             font-size: 18px;
         }
+
+        .container {
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Vertically align items */
+            justify-content: space-between; /* Space between text and image */
+        }
+
+        .text-content {
+            flex: 1; /* Allow text to take available space */
+            padding-right: 40px; /* Add spacing between text and image */
+        }
+
         .content {
             max-width: 900px;
             margin: 50px auto;
             padding: 20px;
             text-align: left;
         }
+
         .content h1 {
             font-size: 36px;
         }
+
         .content h1 span {
-            color:#156082;
+            color: #156082;
         }
+
         .content p {
             font-size: 18px;
         }
+
         .bold {
             font-weight: bold;
         }
+        
+        .spacer {
+            color:#FFFFFF;
+        }
+
         .image-container {
-            text-align: right;
+            text-align: right; /* Align image to the right */
         }
+
         .image-container img {
-            max-width: 250px;
-            border-radius: 10px;
+            width: 300px; /* Set a fixed width for the image */
+            border-radius: 10px; /* Optional rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
         }
+
         .social-icons {
             display: flex;
             justify-content: left;
             margin-top: 20px;
         }
+
         .social-icons a {
             margin-right: 15px;
             font-size: 24px;
             color: black;
             text-decoration: none;
         }
-        .social-icons a img {
-    width: 30px; /* Set desired width */
-    height: 30px; /* Set desired height */
-    object-fit: contain; /* Ensures the entire icon fits without distortion */
-    margin-right: 10px; /* Add spacing between icons */
-    transition: transform 0.3s ease-in-out; /* Smooth effect on hover */
-}
 
-.social-icons a img:hover {
-    transform: scale(1.1); /* Slightly enlarges the icon on hover */
-}
+        .social-icons a img {
+            width: 30px; /* Set desired width */
+            height: 30px; /* Set desired height */
+            object-fit: contain; /* Ensures the entire icon fits without distortion */
+            margin-right: 10px; /* Add spacing between icons */
+            transition: transform 0.3s ease-in-out; /* Smooth effect on hover */
+        }
+
+        .social-icons a img:hover {
+            transform: scale(1.1); /* Slightly enlarges the icon on hover */
+        }
     </style>
+
 </head>
 <body>
 
@@ -92,21 +122,29 @@
     <div class="content">
         <h1><strong>Hey, I'm <span>Richard Goodman</span></strong></h1>
         
+
+<div class="container"> 
+
+        <p> I'm a Post-Doc studying genomics of this subject at the Liverpool School of Tropical Medicine. My areas of research include microbiology, molecular biology, genomics and bioinformatics. I focus on the evolution of antimicrobial resistance (AMR) in bacteria. I am interested in all things genomics, from DNA extraction to data analysis and I have a collection of bioinformatic tutorials. 
+        </p>
+        
+        <div class="spacer">
+        </p>
+        spacer
+        </p>
+        </div> 
+        
         <div class="image-container">
             <img src="imgs/RG_headshot.png" alt="Picture">
-        </div>
-
-        <p>I'm a Post-Doc studying genomics of this subject at the Liverpool School of Tropical Medicine </span></p>
-
-        <p> My areas of research include microbiology, molecular biology, genomics and bioinformatics. I focus particualry on the evolution of antimicrobial resisatnce (AMR) in bacteria. I am interested in all things genomics, from DNA extraction to data analysis and I have a collection of bioinformatic tutorials. 
-        </p>
-
+        </div>        
+</div>
         <div class="social-icons">
             <a href="https://github.com/rngoodman"><img src="imgs/github.png" alt="GitHub"></a>
             <a href="https://www.linkedin.com/in/richard-n-goodman/"><img src="imgs/linkedin.png" alt="LinkedIn"></a>
             <a href="https://bsky.app/profile/richard-goodman.bsky.social"><img src="imgs/bluesky.svg" alt="Twitter"></a>
         </div>
     </div>
+
 
 </body>
 </html>
